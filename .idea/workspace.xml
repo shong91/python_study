@@ -1,7 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5754531e-7457-46e6-81eb-d5e2a2e20bc7" name="Default Changelist" comment="" />
+    <list default="true" id="5754531e-7457-46e6-81eb-d5e2a2e20bc7" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pygame_basic/7_text.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pygame_basic/8_frame.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pygame_basic/quiz.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pangGame/1_create_frame.py" beforeDir="false" afterPath="$PROJECT_DIR$/pygame_basic/1_create_frame.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pangGame/2_background.py" beforeDir="false" afterPath="$PROJECT_DIR$/pygame_basic/2_background.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pangGame/3_main_sprite.py" beforeDir="false" afterPath="$PROJECT_DIR$/pygame_basic/3_main_sprite.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pangGame/4_keyboardevent.py" beforeDir="false" afterPath="$PROJECT_DIR$/pygame_basic/4_keyboardevent.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pangGame/5_framePerSecond.py" beforeDir="false" afterPath="$PROJECT_DIR$/pygame_basic/5_framePerSecond.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pangGame/6_collision.py" beforeDir="false" afterPath="$PROJECT_DIR$/pygame_basic/6_collision.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pangGame/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/pygame_basic/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pangGame/background.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/pygame_basic/background.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pangGame/character.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/pygame_basic/character.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pangGame/enemy.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/pygame_basic/enemy.jpg" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,7 +31,13 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1erYHsndHPl86qbeteQzTwL8lX8" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -22,7 +45,8 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/pangGame/6_collision.py" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/pangGame/7_text.py" />
     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
   </component>
   <component name="RunManager">
@@ -38,7 +62,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pangGame/6_collision.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pangGame/7_text.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -67,29 +91,29 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1595143120805">
+    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1595146813888">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1595143120805" />
-    <state x="548" y="167" key="FileChooserDialogImpl" timestamp="1595142566649">
+    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1595146813888" />
+    <state x="548" y="167" key="FileChooserDialogImpl" timestamp="1595146813255">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="548" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1595142566649" />
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1595143160129">
+    <state x="548" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1595146813255" />
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1595147194706">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1595143160129" />
-    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1595143160128">
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1595147194706" />
+    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1595147194705">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1595143160128" />
-    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1595143160128">
+    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1595147194705" />
+    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1595147194705">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1595143160128" />
-    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1595143160128">
+    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1595147194705" />
+    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1595147194706">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1595143160128" />
+    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1595147194706" />
   </component>
 </project>
