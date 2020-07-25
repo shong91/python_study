@@ -14,13 +14,13 @@ pygame.display.set_caption("Pang Game")
 
 
 # 배경 설정
-background = pygame.image.load(r"D:\Github_repo\python_study\pangGame\background.jpg")
+background = pygame.image.load(r"D:\Github_repo\python_study\pygame_basic\background.jpg")
 
 # FPS 설정
 clock = pygame.time.Clock()
 
 # 스프라이트(메인 캐릭터) 불러오기
-character = pygame.image.load(r"D:\Github_repo\python_study\pangGame\character.jpg")
+character = pygame.image.load(r"D:\Github_repo\python_study\pygame_basic\character.jpg")
 character_size = character.get_rect().size  # 이미지의 크기를 구해온다
 character_width = character_size[0]
 character_height = character_size[1]
