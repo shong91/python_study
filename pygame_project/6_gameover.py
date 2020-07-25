@@ -54,10 +54,10 @@ weapon_speed = 10
 
 # 1.5 공
 ball_images = [
-    pygame.image.load(os.path.join(image_path, "ballon1.png")),
-    pygame.image.load(os.path.join(image_path, "ballon2.png")),
-    pygame.image.load(os.path.join(image_path, "ballon3.png")),
-    pygame.image.load(os.path.join(image_path, "ballon4.png"))
+    pygame.image.load(os.path.join(image_path, "ballon_1.png")),
+    pygame.image.load(os.path.join(image_path, "ballon_2.png")),
+    pygame.image.load(os.path.join(image_path, "ballon_3.png")),
+    pygame.image.load(os.path.join(image_path, "ballon_4.png"))
 ]
 
 # 공은 크기에 따라 속도가 다르다 (작아질수록 속도 감소)
@@ -93,7 +93,7 @@ game_result = "GAME OVER" # GAME OVER, MISSION CLEAR, TIMEOUT
 
 total_time = 100
 start_ticks = pygame.time.get_ticks()
-
+pygame.time.delay(9000)
 # 2. 이벤트 루프 (계속 실행하여야 창이 꺼지지 않음)
 running = True  # 게임이 진행중인지 확인하는 변수
 while running:
@@ -188,6 +188,7 @@ while running:
             if weapon_rect.colliderect(ball_rect):
                 weapon_to_remove = weapon_idx   # 해당 무기 없애기 위한 값 설정
                 ball_to_remove = ball_idx       # 해당 공 없애기 위한 값 설정
+
                 # 가장 작은 공이 아니라면, 공 쪼개기
                 if ball_img_idx < 3:
                     # 현재 공 크기 정보
