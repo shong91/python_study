@@ -20,9 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5754531e-7457-46e6-81eb-d5e2a2e20bc7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/gui_basic/11_msgbox.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gui_basic/12_frame.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gui_basic/13_scrollbar.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gui_basic/14_grid.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -61,7 +59,7 @@
       <recent name="D:\Github_repo\python_study" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.13_scrollbar">
+  <component name="RunManager" selected="Python.14_grid">
     <configuration name="10_menu" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="gui_basic" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -146,7 +144,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="9_progressbar" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="14_grid" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="gui_basic" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -158,7 +156,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/gui_basic/9_progressbar.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/gui_basic/14_grid.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -169,18 +167,18 @@
     </configuration>
     <list>
       <item itemvalue="Python.10_menu" />
-      <item itemvalue="Python.9_progressbar" />
       <item itemvalue="Python.11_msgbox" />
       <item itemvalue="Python.12_frame" />
       <item itemvalue="Python.13_scrollbar" />
+      <item itemvalue="Python.14_grid" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.14_grid" />
         <item itemvalue="Python.13_scrollbar" />
         <item itemvalue="Python.12_frame" />
         <item itemvalue="Python.11_msgbox" />
         <item itemvalue="Python.10_menu" />
-        <item itemvalue="Python.9_progressbar" />
       </list>
     </recent_temporary>
   </component>
@@ -226,22 +224,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="548" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1595673071959" />
-    <state width="759" height="197" key="GridCell.Tab.0.bottom" timestamp="1596027482736">
+    <state width="759" height="197" key="GridCell.Tab.0.bottom" timestamp="1596028782892">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="759" height="197" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1596027482736" />
-    <state width="759" height="197" key="GridCell.Tab.0.center" timestamp="1596027482736">
+    <state width="759" height="197" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1596028782892" />
+    <state width="759" height="197" key="GridCell.Tab.0.center" timestamp="1596028782891">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="759" height="197" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1596027482736" />
-    <state width="759" height="197" key="GridCell.Tab.0.left" timestamp="1596027482736">
+    <state width="759" height="197" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1596028782891" />
+    <state width="759" height="197" key="GridCell.Tab.0.left" timestamp="1596028782891">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="759" height="197" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1596027482736" />
-    <state width="759" height="197" key="GridCell.Tab.0.right" timestamp="1596027482736">
+    <state width="759" height="197" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1596028782891" />
+    <state width="759" height="197" key="GridCell.Tab.0.right" timestamp="1596028782892">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="759" height="197" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1596027482736" />
+    <state width="759" height="197" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1596028782892" />
     <state x="555" y="50" key="SettingsEditor" timestamp="1595856008738">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
