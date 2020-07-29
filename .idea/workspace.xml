@@ -20,11 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5754531e-7457-46e6-81eb-d5e2a2e20bc7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/gui_basic/10_menu.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gui_basic/6_checkbox.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gui_basic/7_radiobutton.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gui_basic/8_combobox.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gui_basic/9_progressbar.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gui_basic/11_msgbox.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gui_basic/12_frame.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gui_basic/13_scrollbar.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -63,7 +61,7 @@
       <recent name="D:\Github_repo\python_study" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.10_menu">
+  <component name="RunManager" selected="Python.13_scrollbar">
     <configuration name="10_menu" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="gui_basic" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -85,7 +83,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="6_checkbox" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="11_msgbox" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="gui_basic" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -97,7 +95,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/gui_basic/6_checkbox.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/gui_basic/11_msgbox.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -106,7 +104,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="7_radiobutton" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="12_frame" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="gui_basic" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -118,7 +116,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/gui_basic/7_radiobutton.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/gui_basic/12_frame.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -127,7 +125,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="8_combobox" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="13_scrollbar" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="gui_basic" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -139,7 +137,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/gui_basic/8_combobox.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/gui_basic/13_scrollbar.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -169,84 +167,20 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
-      <module name="gui_basic" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration default="true" type="Tox" factoryName="Tox">
-      <module name="gui_basic" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <method v="2" />
-    </configuration>
-    <configuration default="true" type="tests" factoryName="Doctests">
-      <module name="gui_basic" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_SCRIPT" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <method v="2" />
-    </configuration>
-    <configuration default="true" type="tests" factoryName="Unittests">
-      <module name="gui_basic" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
-      <method v="2" />
-    </configuration>
     <list>
-      <item itemvalue="Python.6_checkbox" />
-      <item itemvalue="Python.7_radiobutton" />
-      <item itemvalue="Python.8_combobox" />
-      <item itemvalue="Python.9_progressbar" />
       <item itemvalue="Python.10_menu" />
+      <item itemvalue="Python.9_progressbar" />
+      <item itemvalue="Python.11_msgbox" />
+      <item itemvalue="Python.12_frame" />
+      <item itemvalue="Python.13_scrollbar" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.13_scrollbar" />
+        <item itemvalue="Python.12_frame" />
+        <item itemvalue="Python.11_msgbox" />
         <item itemvalue="Python.10_menu" />
         <item itemvalue="Python.9_progressbar" />
-        <item itemvalue="Python.8_combobox" />
-        <item itemvalue="Python.7_radiobutton" />
-        <item itemvalue="Python.6_checkbox" />
       </list>
     </recent_temporary>
   </component>
@@ -273,6 +207,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="361" y="71" key="#Inspections" timestamp="1595742688490">
@@ -291,22 +226,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="548" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1595673071959" />
-    <state width="745" height="195" key="GridCell.Tab.0.bottom" timestamp="1595862993090">
+    <state width="759" height="197" key="GridCell.Tab.0.bottom" timestamp="1596027482736">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="745" height="195" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1595862993090" />
-    <state width="745" height="195" key="GridCell.Tab.0.center" timestamp="1595862993090">
+    <state width="759" height="197" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1596027482736" />
+    <state width="759" height="197" key="GridCell.Tab.0.center" timestamp="1596027482736">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="745" height="195" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1595862993090" />
-    <state width="745" height="195" key="GridCell.Tab.0.left" timestamp="1595862993090">
+    <state width="759" height="197" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1596027482736" />
+    <state width="759" height="197" key="GridCell.Tab.0.left" timestamp="1596027482736">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="745" height="195" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1595862993090" />
-    <state width="745" height="195" key="GridCell.Tab.0.right" timestamp="1595862993090">
+    <state width="759" height="197" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1596027482736" />
+    <state width="759" height="197" key="GridCell.Tab.0.right" timestamp="1596027482736">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="745" height="195" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1595862993090" />
+    <state width="759" height="197" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1596027482736" />
     <state x="555" y="50" key="SettingsEditor" timestamp="1595856008738">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
