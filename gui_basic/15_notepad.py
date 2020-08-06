@@ -15,7 +15,7 @@ def openFile():
             text.delete("1.0", END)
             text.insert(END, file.read())
 
-
+2
 def saveFile():
     with open(filename, "w", encoding="UTF-8") as file:
         file.write(text.get("1.0", END))

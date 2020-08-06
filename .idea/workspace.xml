@@ -20,9 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5754531e-7457-46e6-81eb-d5e2a2e20bc7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/gui_basic/15_notepad.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gui_project/0_inst.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gui_project/2_basic_func.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gui_project/for_reversed.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gui_basic/15_notepad.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui_basic/15_notepad.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,70 +61,7 @@
       <recent name="D:\Github_repo\python_study" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.15_notepad">
-    <configuration name="11_msgbox" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="gui_basic" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/gui_basic" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/gui_basic/11_msgbox.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="12_frame" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="gui_basic" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/gui_basic" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/gui_basic/12_frame.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="13_scrollbar" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="gui_basic" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/gui_basic" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/gui_basic/13_scrollbar.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.2_basic_func">
     <configuration name="14_grid" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="gui_basic" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -166,20 +104,83 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="1_create_layout" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="gui_basic" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/gui_project" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/gui_project/1_create_layout.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="2_basic_func" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="gui_basic" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/gui_project" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/gui_project/2_basic_func.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="for_reversed" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="gui_basic" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/gui_project" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/gui_project/for_reversed.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <list>
-      <item itemvalue="Python.11_msgbox" />
-      <item itemvalue="Python.12_frame" />
-      <item itemvalue="Python.13_scrollbar" />
       <item itemvalue="Python.14_grid" />
       <item itemvalue="Python.15_notepad" />
+      <item itemvalue="Python.1_create_layout" />
+      <item itemvalue="Python.2_basic_func" />
+      <item itemvalue="Python.for_reversed" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.2_basic_func" />
+        <item itemvalue="Python.for_reversed" />
+        <item itemvalue="Python.1_create_layout" />
         <item itemvalue="Python.15_notepad" />
         <item itemvalue="Python.14_grid" />
-        <item itemvalue="Python.13_scrollbar" />
-        <item itemvalue="Python.12_frame" />
-        <item itemvalue="Python.11_msgbox" />
       </list>
     </recent_temporary>
   </component>
@@ -225,22 +226,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="548" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1595673071959" />
-    <state width="745" height="197" key="GridCell.Tab.0.bottom" timestamp="1596117235549">
+    <state width="745" height="196" key="GridCell.Tab.0.bottom" timestamp="1596725743397">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="745" height="197" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1596117235549" />
-    <state width="745" height="197" key="GridCell.Tab.0.center" timestamp="1596117235549">
+    <state width="745" height="196" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1596725743397" />
+    <state width="745" height="196" key="GridCell.Tab.0.center" timestamp="1596725743397">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="745" height="197" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1596117235549" />
-    <state width="745" height="197" key="GridCell.Tab.0.left" timestamp="1596117235549">
+    <state width="745" height="196" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1596725743397" />
+    <state width="745" height="196" key="GridCell.Tab.0.left" timestamp="1596725743397">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="745" height="197" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1596117235549" />
-    <state width="745" height="197" key="GridCell.Tab.0.right" timestamp="1596117235549">
+    <state width="745" height="196" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1596725743397" />
+    <state width="745" height="196" key="GridCell.Tab.0.right" timestamp="1596725743397">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="745" height="197" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1596117235549" />
+    <state width="745" height="196" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1596725743397" />
     <state x="555" y="50" key="SettingsEditor" timestamp="1595856008738">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
