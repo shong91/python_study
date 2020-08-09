@@ -20,11 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5754531e-7457-46e6-81eb-d5e2a2e20bc7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/gui_project/5_apply_options.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gui_project/6_advanced_screenshot.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gui_project/ziplib.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gui_project/6_final.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gui_project/GuiMethod.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gui_project/4_merge_images.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui_project/4_merge_images.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gui_project/5_apply_options.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui_project/5_apply_options.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,28 +62,7 @@
       <recent name="D:\Github_repo\python_study" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.5_apply_options">
-    <configuration name="3_autoscrnshoot" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="gui_basic" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/gui_project" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/gui_project/3_autoscrnshoot.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.6_final">
     <configuration name="4_merge_images" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="gui_basic" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -148,7 +126,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="ziplib" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="6_final" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="gui_basic" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -160,7 +138,28 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/gui_project/ziplib.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/gui_project/6_final.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="gui_basic" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/gui_project" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/gui_project/Test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -170,19 +169,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.3_autoscrnshoot" />
       <item itemvalue="Python.4_merge_images" />
-      <item itemvalue="Python.ziplib" />
       <item itemvalue="Python.5_apply_options" />
       <item itemvalue="Python.6_advanced_screenshot" />
+      <item itemvalue="Python.6_final" />
+      <item itemvalue="Python.Test" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.6_final" />
+        <item itemvalue="Python.Test" />
         <item itemvalue="Python.5_apply_options" />
         <item itemvalue="Python.6_advanced_screenshot" />
         <item itemvalue="Python.4_merge_images" />
-        <item itemvalue="Python.ziplib" />
-        <item itemvalue="Python.3_autoscrnshoot" />
       </list>
     </recent_temporary>
   </component>
@@ -228,22 +227,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="548" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1595673071959" />
-    <state width="776" height="195" key="GridCell.Tab.0.bottom" timestamp="1596954247321">
+    <state width="1515" height="195" key="GridCell.Tab.0.bottom" timestamp="1596981242551">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="776" height="195" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1596954247321" />
-    <state width="776" height="195" key="GridCell.Tab.0.center" timestamp="1596954247321">
+    <state width="1515" height="195" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1596981242551" />
+    <state width="1515" height="195" key="GridCell.Tab.0.center" timestamp="1596981242551">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="776" height="195" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1596954247321" />
-    <state width="776" height="195" key="GridCell.Tab.0.left" timestamp="1596954247321">
+    <state width="1515" height="195" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1596981242551" />
+    <state width="1515" height="195" key="GridCell.Tab.0.left" timestamp="1596981242550">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="776" height="195" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1596954247321" />
-    <state width="776" height="195" key="GridCell.Tab.0.right" timestamp="1596954247321">
+    <state width="1515" height="195" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1596981242550" />
+    <state width="1515" height="195" key="GridCell.Tab.0.right" timestamp="1596981242551">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="776" height="195" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1596954247321" />
+    <state width="1515" height="195" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1596981242551" />
     <state x="555" y="50" key="SettingsEditor" timestamp="1595856008738">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -256,9 +255,9 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="809" y="190" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1595754306873" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1596947392000">
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1596978297033">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1596947392000" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1596978297033" />
   </component>
 </project>
