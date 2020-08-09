@@ -38,44 +38,90 @@ def browse_dest_path():
 
 # 이미지 통합
 def merge_image():
-    print(list_file.get(0, END))
-    images = [Image.open(x) for x in list_file.get(0,END)]
-    # size: size[0] = width, size[1] = height
-    # widths = [x.size[0] for x in images]
-    # heights = [x.size[1] for x in images]
+    try:
+        # 가로 넓이
+        img_width = cmb_width.get()
+        if img_width == '원본유지':
+            img_width = -1
+        else:
+            img_width = int(img_width)
 
-    #[(10,10), (20,20), (30,30)]
-    widths, heights = zip(*(x.size for x in images))
+        # 간격
+        img_space = cmb_space.get()
+        if img_space == '좁게':
+            img_space = 30
+        elif img_space == '보통':
+            img_space = 60
+        elif img_space == '넓게':
+            img_space = 90
+        else:           # '없음'
+            img_space = 0
 
-    print("width: ", widths)
-    print("height: ", heights)
+        img_format = cmb_format.get().lower()
 
-    max_width, total_height = max(widths), sum(heights)
-    print("maxW: ", max_width)
-    print("sumH: ", total_height)
+        ###############################################################
+        print(list_file.get(0, END))
+        images = [Image.open(x) for x in list_file.get(0,END)]
 
-    # 스케치북 준비
-    result_img = Image.new("RGB", (max_width, total_height), (255,255,255))
-    y_offset = 0 # 다음 이미지를 붙일 y 위치 정보
+        # 이미지 사이즈를 tuple 로 받아 list 로 저장
+        image_sizes = []
+        if img_width > -1:
+            # width 값 변경
+            image_sizes = [(int(img_width), int(img_width * x.size[1] / x.size[0])) for x in images]
+        else:
+            # 원본 사이즈 사용
+            image_sizes = [(x.size[0], x.size[1]) for x in images]
+        # 높이 계산
+        # 원본 width(x) : 원본 height(y) = 변경 width(x') : 변경 height(y')
+        # xy' = x'y
+        # x = width = size[0]
+        # y = height = size[1]
+        # x' = img_width
+        # y' = x'y / x = img_width * size[1] / size[0]
 
-    for idx, img in enumerate(images):
-        result_img.paste(img, (0, y_offset))
-        y_offset += img.size[1]
+        #[(10,10), (20,20), (30,30)]
+        print('-------------------------------------------------------')
+        print(image_sizes)
+        widths, heights = zip(*image_sizes)
 
-        progress = (idx+1) / len(images) * 100
-        p_bar.set(progress)
-        progress_bar.update()
+        print("width: ", widths)
+        print("height: ", heights)
 
-    # for img in images:
-    #     result_img.paste(img, (0, y_offset))
-    #     y_offset += img.size[1]
+        max_width, total_height = max(widths), sum(heights)
+        print("maxW: ", max_width)
+        print("sumH: ", total_height)
 
-    dest_path = os.path.join(txt_dest_path.get(), "photo.jpg")
-    result_img.save(dest_path)
-    msgbox.showinfo("알림", "작업이 완료되었습니다. ")
+        # 이미지 간격 옵션 적용
+        if img_space > 0:
+            total_height += (img_space * (len(images) -1))
 
+        # 스케치북 준비
+        result_img = Image.new("RGB", (max_width, total_height), (255,255,255))
+        y_offset = 0 # 다음 이미지를 붙일 y 위치 정보
 
+        for idx, img in enumerate(images):
+            # width 가 원본유지가 아닐 경우 이미지 크기 조정
+            if img_width > -1:
+                img = img.resize(image_sizes[idx])
 
+            result_img.paste(img, (0, y_offset))
+            y_offset += (img.size[1] + img_space)
+
+            progress = (idx+1) / len(images) * 100
+            p_bar.set(progress)
+            progress_bar.update()
+
+        # for img in images:
+        #     result_img.paste(img, (0, y_offset))
+        #     y_offset += img.size[1]
+
+        # 포맷 옵션 처리
+        file_name = "photo." + img_format
+        dest_path = os.path.join(txt_dest_path.get(), file_name)
+        result_img.save(dest_path)
+        msgbox.showinfo("알림", "작업이 완료되었습니다. ")
+    except Exception as err:
+        msgbox.showerror('에러', err)
 
 # 시작
 def start():
