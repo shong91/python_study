@@ -7,7 +7,7 @@ from bs4 import BeautifulSoup
 url="https://finance.naver.com/sise/sise_market_sum.nhn?sosok=0&page="
 filename = "시가총액1-200.csv"
 
-# 엑셀파일에서 열 때 한글깨짐 문제 encoding 설정
+# 엑셀파일에서 열 때 한글깨짐 문제 encoding 설정: utf-8-sig
 f = open(filename, "w", encoding="utf-8-sig", newline="") # newline 설정하지 않을 시 엔터가 하나 더 들어가게 됨 
 writer = csv.writer(f)
 
@@ -22,13 +22,13 @@ for page in range(1,5):
     
     for row in data_rows:
         columns = row.find_all("td")
+        
         # 줄바꿈 등 의미없는 데이터는 skip
         if len(columns) <= 1:
             continue
         
         # 불필요한 공백 등은 strip() 으로 trim 함
         data = [column.get_text().strip() for column in columns]
-        # print(data)
         writer.writerow(data)
 
 
