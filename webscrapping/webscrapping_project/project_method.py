@@ -15,7 +15,6 @@ def print_news(index, title, link):
     print("   (링크: {})".format(link))
     print()
 
-
 # 1. 오늘의 날씨 
 def scrape_weather():
     print("[오늘의 날씨]")
@@ -43,6 +42,7 @@ def scrape_weather():
     print("미세먼지 {}".format(pm10))
     print("미세먼지 {}".format(pm25))
     print()
+
 
 # 2. 헤드라인 뉴스
 def scrape_headline_news():
@@ -93,10 +93,3 @@ def scrape_daily_english():
     print("(한글 지문)")
     for sentence in sentences[:len(sentences)//2]: # 앞쪽 절반. 정수형 반환을 위해 // 으로 몫만 가져온다. 
         print(sentence.get_text().strip())
-
-
-if __name__ == "__main__":
-    scrape_weather()
-    scrape_headline_news()
-    scrape_IT_news()
-    scrape_daily_english()
