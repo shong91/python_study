@@ -1,3 +1,4 @@
+import re
 import requests 
 from bs4 import BeautifulSoup
 
@@ -75,7 +76,22 @@ def scrape_IT_news():
         print_news(index, title, link)
 
 
+def scrape_daily_english():
+    print("[오늘의 영어회화]")
+    url = "https://www.hackers.co.kr/?c=s_eng/eng_contents/I_others_english&keywd=haceng_submain_lnb_eng_I_others_english&logger_kw=haceng_submain_lnb_eng_I_others_english"
+    soup = create_soup(url)
+    sentences = soup.find_all("div", attrs={"id": re.compile("^conv_kor_t")})
+    print("(영어 지문)")
+    for sentence in sentences[len(sentences)//2:]: # 뒷쪽 절반. 정수형 반환을 위해 // 으로 몫만 가져온다. 
+        print(sentence.get_text().strip())
+    print()
+    print("(한글 지문)")
+    for sentence in sentences[:len(sentences)//2]: # 앞쪽 절반. 정수형 반환을 위해 // 으로 몫만 가져온다. 
+        print(sentence.get_text().strip())
+
+
 if __name__ == "__main__":
-    # scrape_weather()
-    # scrape_headline_news()
+    scrape_weather()
+    scrape_headline_news()
     scrape_IT_news()
+    scrape_daily_english()
