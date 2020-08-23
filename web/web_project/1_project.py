@@ -2,7 +2,7 @@ import re
 import requests 
 from bs4 import BeautifulSoup
 
-
+# 0. 공통 모듈
 def create_soup(url):
     res = requests.get(url)
     res.raise_for_status()
@@ -14,8 +14,6 @@ def print_news(index, title, link):
     print("{}. {}".format(index+1, title))
     print("   (링크: {})".format(link))
     print()
-
-
 
 # 1. 오늘의 날씨 
 def scrape_weather():
@@ -55,6 +53,8 @@ def scrape_headline_news():
     for index, news in enumerate(news_list):
         title = news.find("a").get_text().strip()
         link = url + news.find("a")["href"]
+        
+        # 출력
         print_news(index, title, link)
 
 # 3. IT 뉴스 정보 가져오기
@@ -73,6 +73,8 @@ def scrape_IT_news():
         a_tag = news.find_all("a")[a_index]
         title = a_tag.get_text().strip()
         link = a_tag["href"]
+        
+        # 출력
         print_news(index, title, link)
 
 
@@ -81,6 +83,8 @@ def scrape_daily_english():
     url = "https://www.hackers.co.kr/?c=s_eng/eng_contents/I_others_english&keywd=haceng_submain_lnb_eng_I_others_english&logger_kw=haceng_submain_lnb_eng_I_others_english"
     soup = create_soup(url)
     sentences = soup.find_all("div", attrs={"id": re.compile("^conv_kor_t")})
+    
+    # 출력
     print("(영어 지문)")
     for sentence in sentences[len(sentences)//2:]: # 뒷쪽 절반. 정수형 반환을 위해 // 으로 몫만 가져온다. 
         print(sentence.get_text().strip())
