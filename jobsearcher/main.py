@@ -1,5 +1,7 @@
+import time
 import requests
 from bs4 import BeautifulSoup
+from selenium import webdriver
 
 
 def create_soup(url):
@@ -11,6 +13,26 @@ def create_soup(url):
     response.raise_for_status()
 
     soup = BeautifulSoup(response.text, "lxml")
+
+    # 1. 스크롤 다운 처리
+    # browser = webdriver.Chrome()
+    # # browser.maximize_window()
+    # browser.get(url)
+
+    # interval = 2
+    # prev_height = browser.execute_script("return document.body.scrollHeight")
+    
+    # while True:
+    #     browser.execute_script("window.scrollTo(0, document.body.scrollHeight)")
+    #     time.sleep(interval)
+    #     curr_height = browser.execute_script("return document.body.scrollHeight")
+
+    #     if prev_height == curr_height:
+    #         break
+    #     prev_height = curr_height
+    
+    # soup = BeautifulSoup(browser.page_source, "lxml")
+
     return soup
 
 
@@ -20,7 +42,8 @@ def search_from_linkedin(keyword):
     soup = create_soup(url)
     
     results = soup.find("ul", attrs={"class", "jobs-search__results-list"}).find_all("li")
-
+   
+    # scroll down 방식 
     for result in results:
         title = result.find("h3", attrs={"class", "job-result-card__title"}).get_text()
         company = result.find("h4", attrs={"class", "job-result-card__subtitle"}).get_text()
@@ -40,30 +63,47 @@ def search_from_linkedin(keyword):
 
 def search_from_indeed(keyword):
     list_indeed = []
-    url = "https://www.indeed.com/jobs?q={}".format(keyword)
+    LIMIT = 50
+    url = f"https://www.indeed.com/jobs?q={keyword}&limit={LIMIT}"
     soup = create_soup(url)
-    results = soup.find_all("div", attrs={"class", "jobsearch-SerpJobCard"})
-  
-    for result in results:
-        new_flag = result.find("span", attrs={"class", "new"})
-        title = result.find("h2", attrs={"class", "title"})
-        if new_flag:
-            title = title.find("a").get_text().strip()
-        else:
-            title = title.get_text().strip()
+    
+    # 페이징 방식
+    pagination = soup.find("div", attrs={"class", "pagination"})
+    links = pagination.find_all("a")
+    pages = []
 
-        # title = result.find("h2", attrs={"class", "title"}).get_text().strip()
-        company = result.find("span", attrs={"class", "company"}).get_text().strip()
-        location = result.find("span", attrs={"class", "location"}).get_text()
-        link = "https://www.indeed.com"+ result.find("a", attrs={"class", "jobtitle"})["href"] # turnstileLink
+    for link in links[:-1]: # [-1]: 마지막에서부터 시작하여 첫번째 item.
+        # print(link.find("span").string)
+        pages.append(int(link.string))
+    
+    # last_page = max_page
+    max_page = pages[-1]
 
-        dict_indeed = {"title" : title
-                      ,"company" : company
-                      ,"location" : location
-                      ,"link" : link
-                      }
+    for page in range(max_page):
+        url = f"{url}&start={page*LIMIT}"
+        soup = create_soup(url)
+        results = soup.find_all("div", attrs={"class", "jobsearch-SerpJobCard"})
         
-        list_indeed.append(dict_indeed)
+        for result in results:
+            new_flag = result.find("span", attrs={"class", "new"})
+            title = result.find("h2", attrs={"class", "title"})
+            if new_flag:
+                title = title.find("a").get_text().strip()
+            else:
+                title = title.get_text().strip()
+
+            # title = result.find("h2", attrs={"class", "title"}).get_text().strip()
+            company = result.find("span", attrs={"class", "company"}).get_text().strip()
+            location = result.find("span", attrs={"class", "location"}).get_text()
+            link = "https://www.indeed.com"+ result.find("a", attrs={"class", "jobtitle"})["href"] # turnstileLink
+
+            dict_indeed = {"title" : title
+                        ,"company" : company
+                        ,"location" : location
+                        ,"link" : link
+                        }
+            
+            list_indeed.append(dict_indeed)
 
     return list_indeed
 
@@ -74,6 +114,7 @@ def search_from_stackoverflow(keyword):
     soup = create_soup(url)
     results = soup.find_all("div", attrs={"class", "js-result"})
     
+    # 페이징 방식
     for result in results:
         title = result.find("h2", attrs={"class", "fs-body3"}).get_text().strip()
         h3 = result.find("h3", attrs={"class", "fs-body1"}).find_all("span")
@@ -92,16 +133,17 @@ def search_from_stackoverflow(keyword):
     return list_stackoverflow
 
 
-
 if __name__ == "__main__":
-    list_linkedin = search_from_linkedin("python")
+    # list_linkedin = search_from_linkedin("python")
     list_indeed = search_from_indeed("python")
-    list_stackoverflow = search_from_stackoverflow("python")
+    # list_stackoverflow = search_from_stackoverflow("python")
 
-    for index, linkedin in enumerate(list_linkedin):
-        print("==========================Search result from linkedin ({})==========================".format(index+1))
-        print(linkedin.get("title"))
-        print(linkedin.get("company"))
-        print(linkedin.get("location"))
-        print(linkedin.get("link"))
+    print(len(list_indeed)) # 25 (스크롤 처리 전)
+
+    # for index, linkedin in enumerate(list_linkedin):
+    #     print("==========================Search result from linkedin ({})==========================".format(index+1))
+    #     print(linkedin.get("title"))
+    #     print(linkedin.get("company"))
+    #     print(linkedin.get("location"))
+    #     print(linkedin.get("link"))
 
