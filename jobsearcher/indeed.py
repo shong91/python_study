@@ -1,38 +1,40 @@
+import time
 import requests
 from bs4 import BeautifulSoup
+from selenium import webdriver
 
 LIMIT = 50
 # global url
 
-def create_soup(url):
-    headers = {
-                "User-Agent"        : "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.125 Safari/537.36",
-                "Accept-Language"   : "ko-KR, ko"
-             }
-    response = requests.get(url, headers=headers)
-    response.raise_for_status()
+def create_soup(url):    
+    if "linkedin" in url:
+        # 1. 스크롤 다운 처리
+        browser = webdriver.Chrome()
+        # browser.maximize_window()
+        browser.get(url)
 
-    soup = BeautifulSoup(response.text, "lxml")
+        interval = 2
+        prev_height = browser.execute_script("return document.body.scrollHeight")
 
-    # 1. 스크롤 다운 처리
-    # browser = webdriver.Chrome()
-    # # browser.maximize_window()
-    # browser.get(url)
+        
+        while True:
+            browser.execute_script("window.scrollTo(0, document.body.scrollHeight)")
+            time.sleep(interval)
+            curr_height = browser.execute_script("return document.body.scrollHeight")
 
-    # interval = 2
-    # prev_height = browser.execute_script("return document.body.scrollHeight")
-
-    
-    # while True:
-    #     browser.execute_script("window.scrollTo(0, document.body.scrollHeight)")
-    #     time.sleep(interval)
-    #     curr_height = browser.execute_script("return document.body.scrollHeight")
-
-    #     if prev_height == curr_height:
-    #         break
-    #     prev_height = curr_height
-    
-    # soup = BeautifulSoup(browser.page_source, "lxml")
+            if prev_height == curr_height:
+                break
+            prev_height = curr_height
+        
+        soup = BeautifulSoup(browser.page_source, "lxml")
+    else:
+        headers = {
+            "User-Agent"        : "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.125 Safari/537.36",
+            "Accept-Language"   : "ko-KR, ko"
+            }
+        response = requests.get(url, headers=headers)
+        response.raise_for_status()
+        soup = BeautifulSoup(response.text, "lxml")
 
     return soup
 
