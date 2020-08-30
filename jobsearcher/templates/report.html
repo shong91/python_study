@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <style>
+        section {
+          display: grid;
+          grid-template-columns: repeat(4, 1fr);
+  
+        }
+        
+      </style>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <h1>Search Results</h1>
+    <h3>Found {{resultNumber}} results for {{searchingBy}} </h3>
+    <a href="/export?word={{searchingBy}}"> Export to CSV</a>
+    <section>
+      <h4>title</h4>
+      <h4>company</h4>
+      <h4>location</h4>
+      <h4>link</h4>
+        <!-- flask 에서 python 코드를 작성하기 위해서는 이렇게 -->
+        <!-- {{jobs}} -->
+        {% for job in jobs %}
+        <span>{{job.title}}</span>
+        <span>{{job.company}}</span>
+        <span>{{job.location}}</span>
+        <a href="{{job.link}}" target="__blank"> Apply </a>
+        {% endfor %} 
+    </section>
+   
+</body>
+</html>

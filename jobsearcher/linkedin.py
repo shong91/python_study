@@ -20,7 +20,8 @@ def extract_job(result):
 def get_jobs(soup):
     list_linkedin = []
     results = soup.find("ul", attrs={"class", "jobs-search__results-list"}).find_all("li")
-   
+    print(f"scrapping from linkedin")
+    
     for result in results:
         job = extract_job(result)
         list_linkedin.append(job)

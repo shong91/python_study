@@ -29,7 +29,7 @@ def extract_job(result):
 def get_jobs(url, max_page):
     list_stackoverflow = []
     for page in range(max_page):
-        print(f"scrapping page: {page}")
+        print(f"scrapping page: {page} from stackOverflow")
         url = f"{url}&pg={page}"
         soup = create_soup(url)
         results = soup.find_all("div", attrs={"class", "js-result"})

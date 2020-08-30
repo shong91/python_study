@@ -88,7 +88,7 @@ def extract_job(result):
 def get_jobs(url, max_page):    
     list_indeed = []
     for page in range(max_page):
-        print(f"scrapping page: {page}")
+        print(f"scrapping page: {page} from indeed")
         url = f"{url}&start={page*LIMIT}"
         soup = create_soup(url)
         results = soup.find_all("div", attrs={"class", "jobsearch-SerpJobCard"})
