@@ -3,6 +3,7 @@ import collections, re
 
 """
 01. 유효한 팰린드롬
+cf) 팰린드롬: 앞 뒤가 똑같은 단어난 문장 (ex) A man, a plan, a canal : Panama
 """
 
 
