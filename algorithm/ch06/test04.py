@@ -1,6 +1,14 @@
 import collections
 from typing import List
 import re
+"""
+금지된 단어를 제외한 가장 흔하게 등장하는 단어를 출력하라. (단, 대소문자 구분x, 구두점 무시)
+입력; 
+paragraph = "Bob hit a ball, the hit BALL flew far after it was hit"
+banned = ["hit"]
+출력;
+"ball"
+"""
 
 
 def mostCommonWord(self, paragraph: str, banned: List[str]) -> str:

@@ -1,6 +1,9 @@
 import collections
 from typing import List
-
+"""
+문자열 배열을 받아 애너그램 단위로 그룹핑하라. 
+(애너그램: 문자를 재배열하려 다른 뜻을 가진 단어로 바꾸는 것. ex) eat, ate, tea
+"""
 
 def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
     # 존재하지 않는 키일 경우 keyerror가 나는 것을 방지하기 위해 defaultdict() 로 선언한다.

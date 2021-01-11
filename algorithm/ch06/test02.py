@@ -1,5 +1,7 @@
 from typing import List
-
+"""
+문자열 뒤집기: 입력값은 문자 배열이며, 리턴 없이 리스트 내부를 직접 조작하여 문자열을 뒤집어라. 
+"""
 
 def reverseString(self, s: List[str]) -> None:
     s.reverse()
