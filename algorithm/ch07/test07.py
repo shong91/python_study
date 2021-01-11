@@ -1,4 +1,9 @@
 from typing import List
+"""
+덧셈하여 타겟을 만들 수 있는 배열의 두 숫자 인덱스를 리턴하라.
+입력; nums=[2,7,11,15], target=9
+출력: [0,1]
+"""
 
 
 # solve2: target -num 이 존재하는지 in 연산을 이용하여 검사
