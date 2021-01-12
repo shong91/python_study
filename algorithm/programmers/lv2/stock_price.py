@@ -7,13 +7,9 @@ output: [4, 3, 1, 1, 0]
 """
 
 
-# 이중 for
+# 이중 for (1)
 def solution(prices:List[int]) -> List[int]:
     answer = []
-    # answer = [0] * len(prices)
-    # Q: answer = [0] * len(prices) 하는 이유가 뭔가요? 그냥 answer = [] 이렇게 풀어도 풀리던데..
-    # A: prices값과 동일한 길이의 리스트로 초기화 하기 위해서 초기화 작업하신거 같고 , answer = []로 작업을 하게되면 인덱싱 작업시 에러가 발생합니다. (range()-1 해줘야 하는 이유)
-
     for i in range(len(prices)-1):
         seconds = 0
         # Q: 이것과 완전히 동일한 코드인데 range()가 아닌 enumerate()를 사용했을 때는 왜 효율성 테스트에서 시간초과가 발생하는걸까요? 정말 미스테리합니다...
@@ -28,9 +24,24 @@ def solution(prices:List[int]) -> List[int]:
     return answer
 
 
+# 이중 for (2) - (1)과 같은 로직이지만 answer 변수 선언을 통해 보다 간결하게 코드를 개선함.
+def solution(prices):
+    answer = [0] * len(prices)
+    # Q: answer = [0] * len(prices) 하는 이유가 뭔가요? 그냥 answer = [] 이렇게 풀어도 풀리던데..
+    # A: prices값과 동일한 길이의 리스트로 초기화 하기 위해서 초기화 작업하신거 같고 , answer = []로 작업을 하게되면 인덱싱 작업시 에러가 발생합니다.
+    for i in range(len(prices)):
+        for j in range(i+1, len(prices)):
+            if prices[i] <= prices[j]:
+                answer[i] += 1
+            else:
+                answer[i] += 1
+                break
+    return answer
+
 # stack/queue 사용하기
 def solution2():
     pass
+
 
 if __name__ == '__main__':
     print(solution([1, 2, 3, 2, 3]))
