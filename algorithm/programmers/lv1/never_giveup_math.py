@@ -1,3 +1,6 @@
+from itertools import cycle
+
+
 def solution(answers):
     answer = []
     stu1 = [1, 2, 3, 4, 5]
@@ -8,6 +11,13 @@ def solution(answers):
     stu2 = stu2 * int(len(answers) / len(stu2)) + stu2[:len(answers) % len(stu2)]
     stu3 = stu3 * int(len(answers) / len(stu3)) + stu3[:len(answers) % len(stu3)]
     score = [0, 0, 0]
+
+    # cycle 함수를 이용하여 할 수도 있음!
+    # patterns = [
+    #     cycle([1, 2, 3, 4, 5]),
+    #     cycle([2, 1, 2, 3, 2, 4, 2, 5]),
+    #     cycle([3, 3, 1, 1, 2, 2, 4, 4, 5, 5]),
+    # ]
 
     for i in range(len(answers)):
         if stu1[i] == answers[i]:
