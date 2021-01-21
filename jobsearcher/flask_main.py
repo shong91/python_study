@@ -18,7 +18,7 @@ def home():
 
 @app.route("/report")
 def report():
-    keyword = request.args.get("word")
+    keyword = request.args.get("target")
     print(keyword)
     if keyword:
         keyword = keyword.lower()
@@ -44,7 +44,7 @@ def report():
 def export():
     print("execute method export()")
     try:
-        keyword = request.args.get("word")
+        keyword = request.args.get("target")
         if not keyword:
             raise Exception
         

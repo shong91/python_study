@@ -22,12 +22,12 @@ def home():
 
 @app.route("/report")
 def report():
-  word = request.args.get('word')
+  word = request.args.get('target')
   if word:
     word = word.lower()
     # fromdb = db.get('weather')
     # if fromdb:
-    # #  word = fromdb
+    # #  target = fromdb
     # else:
     str_db = method.scrape_weather()
     # db['weather'] = method.scrape_weather()
@@ -45,13 +45,13 @@ def report():
 def export():
   print("execute method export()")
   try:
-    word = request.args.get('word') 
+    word = request.args.get('target')
     if not word:
       raise Exception
 
     word = word.lower()
     jobs = str_db
-    print("word in export(): ", word)
+    print("target in export(): ", word)
     print("str_db in export(): ", str_db)
 
     # if not jobs:
