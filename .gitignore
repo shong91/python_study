@@ -1,3 +1,4 @@
+**/algorithm/cote/**
 
 /.idea/
 *.xml
@@ -133,4 +134,5 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
 

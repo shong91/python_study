@@ -1,3 +1,4 @@
+from collections import deque
 from typing import List
 """
 [주식가격]
@@ -38,9 +39,24 @@ def solution(prices):
                 break
     return answer
 
+
 # stack/queue 사용하기
-def solution2():
-    pass
+def solution2(prices):
+    answer = []
+    prices = deque(prices)
+    while prices:
+        c = prices.popleft()
+
+        count = 0
+        for i in prices:
+            if c > i:
+                count += 1
+                break
+            count += 1
+
+        answer.append(count)
+
+    return answer
 
 
 if __name__ == '__main__':
