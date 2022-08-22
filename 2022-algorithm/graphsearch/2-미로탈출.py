@@ -9,35 +9,6 @@
 '''
 
 from collections import deque
-count = 0
-
-
-def dfs(x, y):
-    global count
-    if x <= 0 or x >= n or y <= 0 or y >= m or array[x][y] == 0:
-        return
-
-    # 방문처리
-    array[x][y] = 0
-    dfs(x-1, y)
-    dfs(x+1, y)
-    dfs(x, y-1)
-    dfs(x, y+1)
-    count += 1
-
-
-n, m = map(int, input().split())
-array = []
-for i in range(n):
-    array.append(list(map(int, input())))
-
-
-for i in range(n):
-    for j in range(m):
-        dfs(i+1, j+1)
-
-print(count)
-
 
 # 해결 - bfs
 n, m = map(int, input().split())
