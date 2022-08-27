@@ -15,7 +15,7 @@
 n = int(input())
 nodes = int(input())
 graph = [[]*(n+1) for _ in range(n+1)]
-visited = [0]*(n+1)
+visited = [False]*(n+1)
 
 for i in range(nodes):
     a, b = map(int, input().split())
@@ -28,12 +28,12 @@ for i in range(nodes):
 
 def dfs(v):
     # 최상단 노드를 방문처리
-    visited[v] = 1
+    visited[v] = True
 
     # 그래프를 순회하며
     for i in graph[v]:
         # 방문하지 않은 노드를 방문한다
-        if visited[i] == 0:
+        if not visited[i]:
             dfs(i)
 
 
