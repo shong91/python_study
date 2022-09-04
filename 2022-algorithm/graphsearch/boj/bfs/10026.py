@@ -44,12 +44,12 @@ if __name__ == '__main__':
                 count += 1
     print(count)
 
+    # 값 초기화 후 적록색약용 수행
     count = 0
     visited = [[False] * n for _ in range(n)]
     for i in range(n):
         for j in range(n):
             # 방문하지 않았으면 bfs 수행
-
             if not visited[i][j]:
                 bfs(graph_rg, i, j)
                 count += 1
