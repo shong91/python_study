@@ -21,3 +21,5 @@ for i in range(nodes):
     a, b = map(int, input().split())
     graph[a].append(b)
     graph[b].append(a)
+
+print(graph)
